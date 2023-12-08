@@ -7,12 +7,27 @@ function read() {
   return result;
 }
 
-function solve() {
+
+
+const arr = read();
+
+function solve(){
+  for (let j = 0; j < arr.length; j += 1) {
+    element = arr[j].split();
+    const newArr = [];
+    for (let i = 0; i < element.length; i++) {
+      let elem1 = element[i].slice(0, 9);
+      newArr.push(elem1);
+      console.table(newArr);
+    }
+  }
+}
   /**
    * Принимает игровое поле в том формате, в котором его вернули из функции read.
    * Возвращает игровое поле после попытки его решить.
    */
-}
+  
+
 
 function isSolved() {
   /**
