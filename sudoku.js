@@ -1,7 +1,10 @@
+const fs = require("fs");
 function read() {
   /**
    * Прочесть файл puzzles.txt в кодировке 'utf-8' и вернуть эти данные из функции
    */
+  const result = fs.readFileSync("./puzzles.txt", "utf-8");
+  return result;
 }
 
 function solve() {
